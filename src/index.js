@@ -19,11 +19,11 @@ m.route(document.body, '/title', {
     '/title': {
         render() {
             return m(Layout, m('input', {oninput: m.withAttr('value', v => document.title = v)}));
-	      }
+        }
     },
     '/counter/:value': {
         render(vnode) {
             return m(Layout, m(Counter, vnode.attrs));
-	      }
+        }
     }
 });
